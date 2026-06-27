@@ -6,34 +6,35 @@
 // TASK 1: POINTERS & MEMORY
 
 void parse_config(const uint8_t *config_packet, int16_t *high_threshold) {
-    // HỌC VIÊN BẮT ĐẦU VIẾT CODE TỪ ĐÂY
-
-
-
-
-    // HỌC VIÊN KẾT THÚC VIẾT CODE
+    if (config_packet == NULL || high_threshold == NULL)
+        return; 
+    uint8_t LSB = config_packet[0];
+    uint8_t MSB = config_packet[1];
+    *high_threshold = (int16_t)((MSB << 8) | LSB);
 }
 
 // TASK 2: COMPILER & VOLATILE
 
 int16_t read_temperature_reg(void *hw_sensor_reg) {
-    // HỌC VIÊN BẮT ĐẦU VIẾT CODE TỪ ĐÂY
-
-
-
-
-    // HỌC VIÊN KẾT THÚC VIẾT CODE
+    if (hw_sensor_reg == NULL)
+        return 0;
+    return *(volatile int16_t *)hw_sensor_reg;
 }
 
 // TASK 3: DATA TYPES & BITWISE OPERATIONS
 
 void control_output(uint8_t *control_reg, uint8_t fan_enable, uint8_t alarm_enable) {
-    // HỌC VIÊN BẮT ĐẦU VIẾT CODE TỪ ĐÂY
-
-
-
-
-    // HỌC VIÊN KẾT THÚC VIẾT CODE
+    if (control_reg == NULL)
+        return;
+    if (fan_enable == 1)
+        *control_reg |= (1 << 0);
+    else if (fan_enable == 0)
+        *control_reg &= ~(1 << 0);
+    
+    if (alarm_enable == 1)
+        *control_reg |= (1 << 1);
+    else if (alarm_enable == 0)
+        *control_reg &= ~(1 << 1);
 }
 
 // HÀM MAIN KIỂM TRA (Học viên giữ nguyên để chạy thử nghiệm, chỉ thay đổi input nếu cần)
