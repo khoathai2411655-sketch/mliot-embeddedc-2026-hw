@@ -1,0 +1,16 @@
+Thái Việt Anh Khoa - 2411655 _ Homework week2
+
+TASK 4
+4.2: PHÂN BỔ BỘ NHỚ
+- BIKE_MODEL: Thuộc phân vùng .rodata (ROM) vì đây là hằng số chuỗi ký tự, chỉ đọc và không thay đổi.
+- total_odometer: Thuộc phân vùng .bss (RAM) vì đây là biến toàn cục được khởi tạo với giá trị 0.
+- current_speed: Thuộc phân vùng Stack (RAM) vì đây là biến cục bộ, chỉ tồn tại tạm thời trong thời gian hàm thực thi.
+
+4.3: PHÂN TÍCH HIỆN TƯỢNG CRASH
+- Trên máy tính: Đệ quy vô hạn làm tràn bộ nhớ Stack. Hệ điều hành sẽ can thiệp, tắt ép buộc chương trình và 
+văng lỗi "Stack Overflow" hoặc "Segmentation fault".
+- Trên vi điều khiển (VD: ARM Cortex-M): Khi Stack tràn và ghi đè vào vùng cấm/vùng nhớ khác, lõi CPU sẽ ngay lập tức 
+kích hoạt ngắt ngoại lệ và nhảy vào hàm xử lý sự cố phần cứng khẩn cấp có tên là HardFault_Handler 
+(hệ thống sẽ bị treo cứng tại đây).
+
+TASK 5
