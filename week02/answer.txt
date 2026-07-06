@@ -2,15 +2,24 @@ Thái Việt Anh Khoa - 2411655 _ Homework week2
 
 TASK 4
 4.2: PHÂN BỔ BỘ NHỚ
-- BIKE_MODEL: Thuộc phân vùng .rodata (ROM) vì đây là hằng số chuỗi ký tự, chỉ đọc và không thay đổi.
-- total_odometer: Thuộc phân vùng .bss (RAM) vì đây là biến toàn cục được khởi tạo với giá trị 0.
-- current_speed: Thuộc phân vùng Stack (RAM) vì đây là biến cục bộ, chỉ tồn tại tạm thời trong thời gian hàm thực thi.
+- BIKE_MODEL: Thuộc phân vùng .rodata (ROM) vì đây là hằng số chuỗi ký tự, chỉ đọc và không thay đổi
+- total_odometer: Thuộc phân vùng .bss (RAM) vì đây là biến toàn cục được khởi tạo với giá trị 0
+- current_speed: Thuộc phân vùng Stack (RAM) vì đây là biến cục bộ, chỉ tồn tại tạm thời trong thời gian hàm thực thi
 
 4.3: PHÂN TÍCH HIỆN TƯỢNG CRASH
 - Trên máy tính: Đệ quy vô hạn làm tràn bộ nhớ Stack. Hệ điều hành sẽ can thiệp, tắt ép buộc chương trình và 
-văng lỗi "Stack Overflow" hoặc "Segmentation fault".
+văng lỗi "Stack Overflow" hoặc "Segmentation fault"
 - Trên vi điều khiển (VD: ARM Cortex-M): Khi Stack tràn và ghi đè vào vùng cấm/vùng nhớ khác, lõi CPU sẽ ngay lập tức 
 kích hoạt ngắt ngoại lệ và nhảy vào hàm xử lý sự cố phần cứng khẩn cấp có tên là HardFault_Handler 
-(hệ thống sẽ bị treo cứng tại đây).
+(hệ thống sẽ bị treo cứng tại đây)
 
-TASK 5
+TASK 5: TỐI ƯU HÓA DUNG LƯỢNG VỚI LINKER SCRIPT
+- Lựa chọn đúng: CÁCH 1 (uint16_t trip_history[20000] = {0};)
+- Giải thích:
+  + Cách 1 (Khởi tạo toàn bộ bằng 0): Mảng sẽ được Linker xếp vào phân vùng .bss. Đặc điểm của phân vùng .bss là 
+không chiếm dung lượng trên bộ nhớ Flash (bản dịch chỉ lưu thông tin về kích thước). Khi vi điều khiển khởi động, 
+hệ thống sẽ tự động cấp phát 40KB này trên RAM (RAM đang trống 128KB nên hoàn toàn chứa được). Do đó, bộ nhớ 
+Flash 20KB không bị ảnh hưởng.
+  + Cách 2 (Khởi tạo có giá trị khác 0): Mảng sẽ bị xếp vào phân vùng .data. Đặc điểm của vùng .data là bắt buộc 
+phải lưu trữ toàn bộ bản gốc trên bộ nhớ Flash để khi khởi động, vi điều khiển copy số liệu này sang RAM. Do mảng 
+chiếm 40KB mà Flash chỉ còn trống 20KB, việc biên dịch sẽ gây ra lỗi báo tràn dung lượng Flash
