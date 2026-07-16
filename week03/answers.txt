@@ -1,0 +1,60 @@
+HW03: TỰ ĐỘNG HÓA QUY TRÌNH BUILD VÀ FLASH FIRMWARE QUA DÒNG LỆNH
+=================================================================
+
+TASK 1: TỔNG QUAN CÔNG CỤ & LUỒNG LÀM VIỆC
+
+1.1: CÔNG DỤNG CHÍNH CỦA 4 CÔNG CỤ
+- CMake: Là công cụ sinh kịch bản (Build system generator). Nhiệm vụ của nó là đọc cấu hình dự án từ file CMakeLists.txt và tạo ra các file kịch bản biên dịch (như Makefile hoặc Ninja build files) phù hợp với môi trường hiện tại.
+- Ninja: Là hệ thống quản lý quá trình biên dịch (Build system) siêu tốc. Nó đọc các kịch bản do CMake sinh ra để điều phối, tối ưu hóa quá trình gọi Compiler và xử lý các luồng biên dịch song song.
+- Compiler (arm-none-eabi-gcc): Là trình biên dịch chéo (Cross-compiler). Công dụng của nó là dịch các file mã nguồn C/C++ mà con người đọc được thành mã máy (mã nhị phân - binary) mà vi điều khiển ARM (STM32) có thể hiểu và thực thi.
+- STM32_Programmer_CLI: Là công cụ phần mềm giao tiếp với phần cứng qua giao diện dòng lệnh. Nhiệm vụ của nó là nạp (flash) file nhị phân (firmware) vừa được biên dịch vào bộ nhớ Flash của vi điều khiển STM32.
+
+1.2: TRÌNH TỰ LOGIC KẾT HỢP
+Quy trình đưa một dòng code C xuống chip chạy theo thứ tự 4 bước sau:
+- Bước 1 (CMake chạy đầu tiên): CMake quét cấu hình mã nguồn và sinh ra file cấu hình trung gian (ví dụ: build.ninja). Kết quả này phục vụ làm đầu vào cho công cụ Ninja.
+- Bước 2 (Ninja chạy thứ hai): Ninja đọc file kịch bản vừa được sinh ra để lên kế hoạch biên dịch, sau đó nó ra lệnh gọi Compiler hoạt động.
+- Bước 3 (Compiler chạy thứ ba - do Ninja gọi): Trình biên dịch arm-none-eabi-gcc tiến hành dịch các file .c thành mã máy và liên kết chúng lại thành một file firmware hoàn chỉnh (ví dụ: file .bin hoặc .elf). Kết quả này là đầu vào bắt buộc cho công cụ nạp.
+- Bước 4 (STM32_Programmer_CLI chạy cuối cùng): Công cụ này lấy file .bin vừa ra lò từ Compiler và đẩy nó qua cáp nạp (như ST-Link) để ghi thẳng vào bộ nhớ của chip STM32, hoàn tất quy trình.
+
+=================================================================
+TASK 2: BẢN CHẤT LUỒNG BIÊN DỊCH & TỐI ƯU HÓA
+
+2.1: VAI TRÒ CỦA LINKER VÀ SỰ KHÁC BIỆT GIỮA FILE .O VÀ .BIN
+- Tại sao không thể nạp file .o: File đối tượng (.o) chứa mã máy, nhưng nó chỉ là những mảnh ghép rời rạc. Trong file .o, địa chỉ của các biến và hàm chỉ là địa chỉ tương đối (chưa xác định vị trí thực tế trên chip). Nếu file main.c gọi một hàm ở file sensor.c, file main.o sẽ không biết địa chỉ thực của hàm đó nằm ở đâu (unresolved symbols).
+- Vai trò của Linker: Trình liên kết (Linker) sẽ "gom" tất cả các mảnh ghép .o lại với nhau, giải quyết các lời gọi hàm chéo, và dựa vào Linker Script để gán chính xác địa chỉ vật lý tuyệt đối cho từng lệnh/biến (đưa vào đúng phân vùng .text, .data, hay .bss).
+- Điểm khác biệt cốt lõi: File .o là mã máy phân mảnh mang địa chỉ ảo. Trong khi đó, file .bin (Binary) là một khối dữ liệu nhị phân nguyên thủy, nguyên khối liền mạch, nơi mọi địa chỉ bộ nhớ đã được "chốt hạ" tuyệt đối, giúp CPU của chip có thể nạp thẳng vào Flash và thực thi ngay lập tức.
+
+2.2: CƠ CHẾ BUILD TĂNG DẦN (INCREMENTAL BUILD) CỦA NINJA
+- Vai trò tiết kiệm thời gian: Trong dự án lớn, việc dịch hàng trăm file .c thành .o có thể mất đến vài phút. Nếu chỉ sửa 1 dòng code mà phải đợi dịch lại toàn bộ thì cực kỳ lãng phí. Build tăng dần giúp hệ thống chỉ tốn vài mili-giây để biên dịch đúng phần bị sửa đổi, giữ nguyên phần còn lại.
+- Cơ chế hoạt động của Ninja: Ninja hoạt động dựa trên việc so sánh "Thời gian sửa đổi lần cuối" (Timestamp / Last Modified Time) của các file. Ninja sẽ kiểm tra thời gian lưu của file nguồn (.c) và file đích tương ứng (.o). 
+  + Nếu thời gian lưu của file .c mới hơn thời gian tạo của file .o -> Ninja biết file vừa bị lập trình viên sửa đổi và ra lệnh biên dịch lại duy nhất file đó.
+  + Nếu thời gian tạo của file .o mới hơn file .c -> Ninja kết luận file này không có thay đổi và lập tức bỏ qua. Đồng thời, Ninja cũng quản lý cây phụ thuộc (Dependency graph) để biết nếu một file header (.h) bị sửa, tất cả các file .c có #include nó đều phải được dịch lại.
+
+=====================================================================
+TASK 3: BẢN ĐỒ BỘ NHỚ & LINKER SCRIPT
+
+3.1: SỰ KHÁC NHAU GIỮA VMA VÀ LMA CỦA VÙNG .DATA
+- LMA (Load Memory Address): Là địa chỉ nạp bộ nhớ vật lý. Trong script, cú pháp `AT> FLASH` quy định file nhị phân khi nạp xuống chip sẽ lưu dữ liệu vùng này ở bộ nhớ ROM (Flash). Hàm `LOADADDR(.data)` lấy địa chỉ gốc này gán cho biến `_sidata`.
+- VMA (Virtual/Runtime Memory Address): Là địa chỉ thực thi. Cú pháp `>RAM` quy định khi chương trình chạy, hệ thống sẽ ánh xạ (hoặc hiểu) vùng dữ liệu này nằm ở RAM.
+- Tại sao cần cả hai: Vùng .data chứa các biến toàn cục/static có giá trị khởi tạo khác 0 (VD: `int default_speed = 25;`). Giá trị gốc "25" phải được cất giữ ở Flash (LMA) để không bị mất khi rút nguồn xe đạp điện. Tuy nhiên, do là "biến" (có thể bị ghi đè, thay đổi liên tục trong quá trình chạy), nó bắt buộc phải được đưa lên RAM (VMA) vì Flash không hỗ trợ ghi đè trực tiếp và nhanh chóng ở cấp độ từng byte như RAM.
+
+3.2: HẬU QUẢ KHI STARTUP CODE QUÊN SAO CHÉP DỮ LIỆU
+- Vai trò của Startup code: Trước khi nhảy vào hàm `main()`, một đoạn mã khởi động (`Reset_Handler`) sẽ âm thầm chạy để lấy dữ liệu từ Flash (`_sidata`) copy sang RAM (`_sdata` đến `_edata`).
+- Hậu quả nếu quên: Nếu bước này bị bỏ qua, các vùng nhớ dành cho biến toàn cục trên RAM sẽ hoàn toàn trống rỗng hoặc chứa toàn "giá trị rác" (garbage values) ngẫu nhiên có từ lúc phần cứng mới được cấp điện. 
+- Hiện tượng: Biến `int default_speed = 25;` của bạn khi in ra ở hàm main() có thể sẽ mang giá trị -128394 hoặc bất kỳ con số vô nghĩa nào đó, dẫn đến sai lệch logic hoàn toàn, động cơ chạy loạn hoặc hệ thống crash ngay lập tức.
+
+===================================================================
+TASK 4: GÕ LỆNH THỦ CÔNG
+
+4.1: CÂU LỆNH CẤU HÌNH CMAKE VỚI NINJA
+- Lệnh: cmake -G Ninja -B build
+- Giải thích: 
+  + "cmake": Gọi công cụ CMake.
+  + "-G Ninja": Cờ (flag) -G dùng để chỉ định bộ sinh kịch bản (Generator). Ở đây ta ép hệ thống dùng Ninja thay vì Makefile mặc định.
+  + "-B build": Cờ -B (Build directory) chỉ định cho CMake dồn toàn bộ các file sinh ra (file rác trung gian, file cấu hình) vào một thư mục riêng biệt tên là "build" để giữ cho thư mục mã nguồn luôn sạch sẽ.
+
+4.2: CÂU LỆNH GỌI NINJA ĐỂ BIÊN DỊCH
+- Lệnh: ninja -C build
+- Giải thích:
+  + "ninja": Trực tiếp gọi công cụ biên dịch Ninja.
+  + "-C build": Chữ C viết tắt của Change directory. Lệnh này báo cho Ninja biết: "Hãy nhảy vào thư mục build, đọc file cấu hình trong đó và bắt đầu tiến trình dịch mã nguồn, thay vì tìm kiếm ở thư mục hiện tại".
