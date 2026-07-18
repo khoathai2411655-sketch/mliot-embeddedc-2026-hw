@@ -1,0 +1,3 @@
+D:/Embedded C/mliot-embeddedc-2026-hw/week04/build/CMakeFiles/HW04_GPIO.dir
+D:/Embedded C/mliot-embeddedc-2026-hw/week04/build/CMakeFiles/edit_cache.dir
+D:/Embedded C/mliot-embeddedc-2026-hw/week04/build/CMakeFiles/rebuild_cache.dir

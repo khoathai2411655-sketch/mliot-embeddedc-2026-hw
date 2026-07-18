@@ -1,0 +1,10 @@
+Task 1. Bản chất chế độ GPIO:
+- Push-Pull: Khi xuất mức 1, PMOS đóng và NMOS ngắt để kéo áp lên 3.3V. Khi xuất mức 0, PMOS ngắt và NMOS đóng để xả áp xuống 0V.
+- Input Pull-up: Dùng khi nối với thiết bị không tự xuất mức cao (nút nhấn nối mass, I2C, Open-Drain) để giữ chân ổn định mức 1. Nếu để Floating, chân sẽ hút nhiễu điện từ, khiến giá trị đọc về nhảy loạn xạ 0 và 1.
+
+Task 2. Tầm quan trọng của Clock:
+- Tắt Clock mặc định: Để tối ưu và tiết kiệm điện năng tối đa cho chip.
+- Quên bật Clock: Khối GPIO bị đóng băng, mất kết nối với bus. Mọi lệnh cấu hình vào thanh ghi đều thất bại ngầm, chân GPIO không hoạt động và giữ nguyên trạng thái mặc định.
+
+Task 3, 4, 5
+https://drive.google.com/file/d/1JudG1G46wHlABYdcMIPa2UHaCyS8MPeh/view?usp=drive_link
