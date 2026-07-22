@@ -7,4 +7,4 @@ Task 2. Tầm quan trọng của Clock:
 - Quên bật Clock: Khối GPIO bị đóng băng, mất kết nối với bus. Mọi lệnh cấu hình vào thanh ghi đều thất bại ngầm, chân GPIO không hoạt động và giữ nguyên trạng thái mặc định.
 
 Task 3, 4, 5
-https://drive.google.com/file/d/1JudG1G46wHlABYdcMIPa2UHaCyS8MPeh/view?usp=drive_link
+https://drive.google.com/drive/folders/1rYVU0S0v9UE7WyhHS7wIZ-G80U9WIzD4?usp=sharing

@@ -49,6 +49,7 @@ target_link_options(${PROJECT_NAME} PRIVATE
     -mfloat-abi=soft
     --specs=nano.specs
     -nostartfiles
+    -Wl,--gc-sections
     -Wl,-Map=${PROJECT_NAME}.map
 )
 

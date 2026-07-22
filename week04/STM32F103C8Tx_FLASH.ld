@@ -54,7 +54,7 @@ SECTIONS
   ._user_heap_stack :
   {
     . = ALIGN(8);
-    . = . + 0x200;
+    . = . + 0x200;   /* min heap 512 byte, chỉnh nếu cần */
     . = ALIGN(8);
   } >RAM
 }

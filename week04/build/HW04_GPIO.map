@@ -7,6 +7,9 @@ C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m
 
 Discarded input sections
 
+ .text          0x00000000       0x14 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
+ .data          0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
+ .bss           0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
@@ -58,6 +61,9 @@ Discarded input sections
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
+ .text          0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
+ .data          0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
@@ -109,6 +115,51 @@ Discarded input sections
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text          0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .data          0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_DeInit
+                0x00000000       0x30 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_MspInit
+                0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_MspDeInit
+                0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_GetTickPrio
+                0x00000000       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_SetTickFreq
+                0x00000000       0x50 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_GetTickFreq
+                0x00000000       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_Delay
+                0x00000000       0x48 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_SuspendTick
+                0x00000000       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_ResumeTick
+                0x00000000       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_GetHalVersion
+                0x00000000       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_GetREVID
+                0x00000000       0x18 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_GetDEVID
+                0x00000000       0x18 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_GetUIDw0
+                0x00000000       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_GetUIDw1
+                0x00000000       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_GetUIDw2
+                0x00000000       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_DBGMCU_EnableDBGSleepMode
+                0x00000000       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_DBGMCU_DisableDBGSleepMode
+                0x00000000       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_DBGMCU_EnableDBGStopMode
+                0x00000000       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_DBGMCU_DisableDBGStopMode
+                0x00000000       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_DBGMCU_EnableDBGStandbyMode
+                0x00000000       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .text.HAL_DBGMCU_DisableDBGStandbyMode
+                0x00000000       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
  .debug_macro   0x00000000      0xac6 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
  .debug_macro   0x00000000      0x2cd CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
  .debug_macro   0x00000000       0x2e CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
@@ -211,6 +262,17 @@ Discarded input sections
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+ .text          0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+ .data          0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+ .text.HAL_GPIO_DeInit
+                0x00000000      0x178 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+ .text.HAL_GPIO_LockPin
+                0x00000000       0x4e CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+ .text.HAL_GPIO_EXTI_IRQHandler
+                0x00000000       0x30 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+ .text.HAL_GPIO_EXTI_Callback
+                0x00000000       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
  .debug_macro   0x00000000      0xac6 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
  .debug_macro   0x00000000      0x2cd CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
  .debug_macro   0x00000000       0x2e CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
@@ -313,6 +375,31 @@ Discarded input sections
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .text          0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .data          0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .text.HAL_RCC_DeInit
+                0x00000000      0x134 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .text.HAL_RCC_MCOConfig
+                0x00000000       0x70 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .text.HAL_RCC_EnableCSS
+                0x00000000       0x18 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .text.HAL_RCC_DisableCSS
+                0x00000000       0x18 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .text.HAL_RCC_GetHCLKFreq
+                0x00000000       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .text.HAL_RCC_GetPCLK1Freq
+                0x00000000       0x28 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .text.HAL_RCC_GetPCLK2Freq
+                0x00000000       0x28 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .text.HAL_RCC_GetOscConfig
+                0x00000000      0x104 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .text.HAL_RCC_GetClockConfig
+                0x00000000       0x60 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .text.HAL_RCC_NMI_IRQHandler
+                0x00000000       0x28 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .text.HAL_RCC_CSSCallback
+                0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
  .debug_macro   0x00000000      0xac6 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
  .debug_macro   0x00000000      0x2cd CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
  .debug_macro   0x00000000       0x2e CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
@@ -415,6 +502,51 @@ Discarded input sections
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text          0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .data          0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.__NVIC_EnableIRQ
+                0x00000000       0x38 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.__NVIC_DisableIRQ
+                0x00000000       0x48 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.__NVIC_GetPendingIRQ
+                0x00000000       0x40 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.__NVIC_SetPendingIRQ
+                0x00000000       0x3c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.__NVIC_ClearPendingIRQ
+                0x00000000       0x3c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.__NVIC_GetActive
+                0x00000000       0x40 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.__NVIC_GetPriority
+                0x00000000       0x4c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.NVIC_DecodePriority
+                0x00000000       0x6c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.__NVIC_SystemReset
+                0x00000000       0x2c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.HAL_NVIC_EnableIRQ
+                0x00000000       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.HAL_NVIC_DisableIRQ
+                0x00000000       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.HAL_NVIC_SystemReset
+                0x00000000        0x8 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.HAL_NVIC_GetPriorityGrouping
+                0x00000000        0xe CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.HAL_NVIC_GetPriority
+                0x00000000       0x2c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.HAL_NVIC_SetPendingIRQ
+                0x00000000       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.HAL_NVIC_GetPendingIRQ
+                0x00000000       0x1e CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.HAL_NVIC_ClearPendingIRQ
+                0x00000000       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.HAL_NVIC_GetActive
+                0x00000000       0x1e CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.HAL_SYSTICK_CLKSourceConfig
+                0x00000000       0x38 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.HAL_SYSTICK_IRQHandler
+                0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .text.HAL_SYSTICK_Callback
+                0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
  .debug_macro   0x00000000      0xac6 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
  .debug_macro   0x00000000      0x2cd CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
  .debug_macro   0x00000000       0x2e CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
@@ -517,6 +649,13 @@ Discarded input sections
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
  .group         0x00000000        0xc CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
+ .text          0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
+ .data          0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
+ .rodata.APBPrescTable
+                0x00000000        0x8 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
+ .text.SystemCoreClockUpdate
+                0x00000000       0xe4 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
  .debug_macro   0x00000000      0xac6 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
  .debug_macro   0x00000000       0x2e CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
  .debug_macro   0x00000000       0x22 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
@@ -568,6 +707,12 @@ Discarded input sections
  .debug_macro   0x00000000       0xb7 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
  .debug_macro   0x00000000      0x242 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
  .debug_macro   0x00000000       0x83 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
+ .text          0x00000000        0x0 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
+ .data          0x00000000        0x0 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
+ .text          0x00000000        0x0 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
+ .data          0x00000000        0x0 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
+ .bss           0x00000000        0x0 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
 
 Memory Configuration
 
@@ -602,85 +747,76 @@ END GROUP
                 0x08000000                g_pfnVectors
                 0x0800010c                        . = ALIGN (0x4)
 
-.text           0x0800010c     0x1f1c
+.text           0x0800010c     0x1254
                 0x0800010c                        . = ALIGN (0x4)
  *(.text)
- .text          0x0800010c       0x14 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
- .text          0x08000120        0x0 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
- .text          0x08000120        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
- .text          0x08000120        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
- .text          0x08000120        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
- .text          0x08000120        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .text          0x08000120        0x0 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
- .text          0x08000120        0x0 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
- .text          0x08000120        0x0 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
  *(.text*)
  .text.Reset_Handler
-                0x08000120       0x48 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
-                0x08000120                Reset_Handler
+                0x0800010c       0x48 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
+                0x0800010c                Reset_Handler
  .text.Default_Handler
-                0x08000168        0x2 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
-                0x08000168                RTC_Alarm_IRQHandler
-                0x08000168                EXTI2_IRQHandler
-                0x08000168                DebugMon_Handler
-                0x08000168                TIM1_CC_IRQHandler
-                0x08000168                HardFault_Handler
-                0x08000168                PVD_IRQHandler
-                0x08000168                PendSV_Handler
-                0x08000168                NMI_Handler
-                0x08000168                EXTI3_IRQHandler
-                0x08000168                EXTI0_IRQHandler
-                0x08000168                I2C2_EV_IRQHandler
-                0x08000168                UsageFault_Handler
-                0x08000168                ADC1_2_IRQHandler
-                0x08000168                SPI1_IRQHandler
-                0x08000168                TAMPER_IRQHandler
-                0x08000168                DMA1_Channel4_IRQHandler
-                0x08000168                USART3_IRQHandler
-                0x08000168                RTC_IRQHandler
-                0x08000168                DMA1_Channel7_IRQHandler
-                0x08000168                CAN1_RX1_IRQHandler
-                0x08000168                TIM4_IRQHandler
-                0x08000168                I2C1_EV_IRQHandler
-                0x08000168                DMA1_Channel6_IRQHandler
-                0x08000168                TIM3_IRQHandler
-                0x08000168                RCC_IRQHandler
-                0x08000168                TIM1_TRG_COM_IRQHandler
-                0x08000168                DMA1_Channel1_IRQHandler
-                0x08000168                Default_Handler
-                0x08000168                EXTI15_10_IRQHandler
-                0x08000168                EXTI9_5_IRQHandler
-                0x08000168                SPI2_IRQHandler
-                0x08000168                MemManage_Handler
-                0x08000168                SVC_Handler
-                0x08000168                DMA1_Channel5_IRQHandler
-                0x08000168                EXTI4_IRQHandler
-                0x08000168                USB_LP_CAN1_RX0_IRQHandler
-                0x08000168                USB_HP_CAN1_TX_IRQHandler
-                0x08000168                DMA1_Channel3_IRQHandler
-                0x08000168                TIM1_UP_IRQHandler
-                0x08000168                WWDG_IRQHandler
-                0x08000168                TIM2_IRQHandler
-                0x08000168                TIM1_BRK_IRQHandler
-                0x08000168                EXTI1_IRQHandler
-                0x08000168                USART2_IRQHandler
-                0x08000168                I2C2_ER_IRQHandler
-                0x08000168                DMA1_Channel2_IRQHandler
-                0x08000168                CAN1_SCE_IRQHandler
-                0x08000168                FLASH_IRQHandler
-                0x08000168                BusFault_Handler
-                0x08000168                USART1_IRQHandler
-                0x08000168                I2C1_ER_IRQHandler
-                0x08000168                USBWakeUp_IRQHandler
- .text._init    0x0800016a        0xc CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
-                0x0800016a                _init
- .text._fini    0x08000176        0xc CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
-                0x08000176                _fini
- *fill*         0x08000182        0x2 
- .text.main     0x08000184       0xfc CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
-                0x08000184                main
+                0x08000154        0x2 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
+                0x08000154                RTC_Alarm_IRQHandler
+                0x08000154                EXTI2_IRQHandler
+                0x08000154                DebugMon_Handler
+                0x08000154                TIM1_CC_IRQHandler
+                0x08000154                HardFault_Handler
+                0x08000154                PVD_IRQHandler
+                0x08000154                PendSV_Handler
+                0x08000154                NMI_Handler
+                0x08000154                EXTI3_IRQHandler
+                0x08000154                EXTI0_IRQHandler
+                0x08000154                I2C2_EV_IRQHandler
+                0x08000154                UsageFault_Handler
+                0x08000154                ADC1_2_IRQHandler
+                0x08000154                SPI1_IRQHandler
+                0x08000154                TAMPER_IRQHandler
+                0x08000154                DMA1_Channel4_IRQHandler
+                0x08000154                USART3_IRQHandler
+                0x08000154                RTC_IRQHandler
+                0x08000154                DMA1_Channel7_IRQHandler
+                0x08000154                CAN1_RX1_IRQHandler
+                0x08000154                TIM4_IRQHandler
+                0x08000154                I2C1_EV_IRQHandler
+                0x08000154                DMA1_Channel6_IRQHandler
+                0x08000154                TIM3_IRQHandler
+                0x08000154                RCC_IRQHandler
+                0x08000154                TIM1_TRG_COM_IRQHandler
+                0x08000154                DMA1_Channel1_IRQHandler
+                0x08000154                Default_Handler
+                0x08000154                EXTI15_10_IRQHandler
+                0x08000154                EXTI9_5_IRQHandler
+                0x08000154                SPI2_IRQHandler
+                0x08000154                MemManage_Handler
+                0x08000154                SVC_Handler
+                0x08000154                DMA1_Channel5_IRQHandler
+                0x08000154                EXTI4_IRQHandler
+                0x08000154                USB_LP_CAN1_RX0_IRQHandler
+                0x08000154                USB_HP_CAN1_TX_IRQHandler
+                0x08000154                DMA1_Channel3_IRQHandler
+                0x08000154                TIM1_UP_IRQHandler
+                0x08000154                WWDG_IRQHandler
+                0x08000154                TIM2_IRQHandler
+                0x08000154                TIM1_BRK_IRQHandler
+                0x08000154                EXTI1_IRQHandler
+                0x08000154                USART2_IRQHandler
+                0x08000154                I2C2_ER_IRQHandler
+                0x08000154                DMA1_Channel2_IRQHandler
+                0x08000154                CAN1_SCE_IRQHandler
+                0x08000154                FLASH_IRQHandler
+                0x08000154                BusFault_Handler
+                0x08000154                USART1_IRQHandler
+                0x08000154                I2C1_ER_IRQHandler
+                0x08000154                USBWakeUp_IRQHandler
+ .text._init    0x08000156        0xc CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
+                0x08000156                _init
+ .text._fini    0x08000162        0xc CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
+                0x08000162                _fini
+ *fill*         0x0800016e        0x2 
+ .text.main     0x08000170       0xfc CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
+                0x08000170                main
  .text.Keypad_Scan
-                0x08000280       0x8c CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
+                0x0800026c       0xa0 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
  .text.MX_GPIO_Init_LED
                 0x0800030c       0x84 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
  .text.MX_GPIO_Init_Button
@@ -700,278 +836,102 @@ END GROUP
  .text.HAL_Init
                 0x080004f8       0x2c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
                 0x080004f8                HAL_Init
- .text.HAL_DeInit
-                0x08000524       0x30 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x08000524                HAL_DeInit
- .text.HAL_MspInit
-                0x08000554        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
- .text.HAL_MspDeInit
-                0x08000560        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x08000560                HAL_MspDeInit
  .text.HAL_InitTick
-                0x0800056c       0x60 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x0800056c                HAL_InitTick
+                0x08000524       0x60 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+                0x08000524                HAL_InitTick
  .text.HAL_IncTick
-                0x080005cc       0x24 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x080005cc                HAL_IncTick
+                0x08000584       0x24 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+                0x08000584                HAL_IncTick
  .text.HAL_GetTick
-                0x080005f0       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x080005f0                HAL_GetTick
- .text.HAL_GetTickPrio
-                0x08000604       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x08000604                HAL_GetTickPrio
- .text.HAL_SetTickFreq
-                0x08000618       0x50 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x08000618                HAL_SetTickFreq
- .text.HAL_GetTickFreq
-                0x08000668       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x08000668                HAL_GetTickFreq
- .text.HAL_Delay
-                0x0800067c       0x48 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x0800067c                HAL_Delay
- .text.HAL_SuspendTick
-                0x080006c4       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x080006c4                HAL_SuspendTick
- .text.HAL_ResumeTick
-                0x080006e0       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x080006e0                HAL_ResumeTick
- .text.HAL_GetHalVersion
-                0x080006fc       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x080006fc                HAL_GetHalVersion
- .text.HAL_GetREVID
-                0x08000710       0x18 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x08000710                HAL_GetREVID
- .text.HAL_GetDEVID
-                0x08000728       0x18 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x08000728                HAL_GetDEVID
- .text.HAL_GetUIDw0
-                0x08000740       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x08000740                HAL_GetUIDw0
- .text.HAL_GetUIDw1
-                0x08000754       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x08000754                HAL_GetUIDw1
- .text.HAL_GetUIDw2
-                0x08000768       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x08000768                HAL_GetUIDw2
- .text.HAL_DBGMCU_EnableDBGSleepMode
-                0x0800077c       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x0800077c                HAL_DBGMCU_EnableDBGSleepMode
- .text.HAL_DBGMCU_DisableDBGSleepMode
-                0x08000798       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x08000798                HAL_DBGMCU_DisableDBGSleepMode
- .text.HAL_DBGMCU_EnableDBGStopMode
-                0x080007b4       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x080007b4                HAL_DBGMCU_EnableDBGStopMode
- .text.HAL_DBGMCU_DisableDBGStopMode
-                0x080007d0       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x080007d0                HAL_DBGMCU_DisableDBGStopMode
- .text.HAL_DBGMCU_EnableDBGStandbyMode
-                0x080007ec       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x080007ec                HAL_DBGMCU_EnableDBGStandbyMode
- .text.HAL_DBGMCU_DisableDBGStandbyMode
-                0x08000808       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
-                0x08000808                HAL_DBGMCU_DisableDBGStandbyMode
+                0x080005a8       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+                0x080005a8                HAL_GetTick
  .text.HAL_GPIO_Init
-                0x08000824      0x308 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
-                0x08000824                HAL_GPIO_Init
- .text.HAL_GPIO_DeInit
-                0x08000b2c      0x178 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
-                0x08000b2c                HAL_GPIO_DeInit
+                0x080005bc      0x308 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+                0x080005bc                HAL_GPIO_Init
  .text.HAL_GPIO_ReadPin
-                0x08000ca4       0x2e CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
-                0x08000ca4                HAL_GPIO_ReadPin
+                0x080008c4       0x2e CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+                0x080008c4                HAL_GPIO_ReadPin
  .text.HAL_GPIO_WritePin
-                0x08000cd2       0x30 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
-                0x08000cd2                HAL_GPIO_WritePin
+                0x080008f2       0x30 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+                0x080008f2                HAL_GPIO_WritePin
  .text.HAL_GPIO_TogglePin
-                0x08000d02       0x32 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
-                0x08000d02                HAL_GPIO_TogglePin
- .text.HAL_GPIO_LockPin
-                0x08000d34       0x4e CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
-                0x08000d34                HAL_GPIO_LockPin
- *fill*         0x08000d82        0x2 
- .text.HAL_GPIO_EXTI_IRQHandler
-                0x08000d84       0x30 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
-                0x08000d84                HAL_GPIO_EXTI_IRQHandler
- .text.HAL_GPIO_EXTI_Callback
-                0x08000db4       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
-                0x08000db4                HAL_GPIO_EXTI_Callback
- .text.HAL_RCC_DeInit
-                0x08000dc8      0x134 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x08000dc8                HAL_RCC_DeInit
+                0x08000922       0x32 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+                0x08000922                HAL_GPIO_TogglePin
  .text.HAL_RCC_OscConfig
-                0x08000efc      0x504 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x08000efc                HAL_RCC_OscConfig
+                0x08000954      0x504 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+                0x08000954                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x08001400      0x1d4 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x08001400                HAL_RCC_ClockConfig
- .text.HAL_RCC_MCOConfig
-                0x080015d4       0x70 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x080015d4                HAL_RCC_MCOConfig
- .text.HAL_RCC_EnableCSS
-                0x08001644       0x18 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x08001644                HAL_RCC_EnableCSS
- .text.HAL_RCC_DisableCSS
-                0x0800165c       0x18 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x0800165c                HAL_RCC_DisableCSS
+                0x08000e58      0x1d4 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+                0x08000e58                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08001674       0xa8 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x08001674                HAL_RCC_GetSysClockFreq
- .text.HAL_RCC_GetHCLKFreq
-                0x0800171c       0x14 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x0800171c                HAL_RCC_GetHCLKFreq
- .text.HAL_RCC_GetPCLK1Freq
-                0x08001730       0x28 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x08001730                HAL_RCC_GetPCLK1Freq
- .text.HAL_RCC_GetPCLK2Freq
-                0x08001758       0x28 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x08001758                HAL_RCC_GetPCLK2Freq
- .text.HAL_RCC_GetOscConfig
-                0x08001780      0x104 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x08001780                HAL_RCC_GetOscConfig
- .text.HAL_RCC_GetClockConfig
-                0x08001884       0x60 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x08001884                HAL_RCC_GetClockConfig
- .text.HAL_RCC_NMI_IRQHandler
-                0x080018e4       0x28 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x080018e4                HAL_RCC_NMI_IRQHandler
+                0x0800102c       0xa8 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+                0x0800102c                HAL_RCC_GetSysClockFreq
  .text.RCC_Delay
-                0x0800190c       0x3c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
- .text.HAL_RCC_CSSCallback
-                0x08001948        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
-                0x08001948                HAL_RCC_CSSCallback
+                0x080010d4       0x3c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
  .text.__NVIC_SetPriorityGrouping
-                0x08001954       0x48 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001110       0x48 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
  .text.__NVIC_GetPriorityGrouping
-                0x0800199c       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .text.__NVIC_EnableIRQ
-                0x080019b8       0x38 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .text.__NVIC_DisableIRQ
-                0x080019f0       0x48 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .text.__NVIC_GetPendingIRQ
-                0x08001a38       0x40 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .text.__NVIC_SetPendingIRQ
-                0x08001a78       0x3c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .text.__NVIC_ClearPendingIRQ
-                0x08001ab4       0x3c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .text.__NVIC_GetActive
-                0x08001af0       0x40 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001158       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
  .text.__NVIC_SetPriority
-                0x08001b30       0x54 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .text.__NVIC_GetPriority
-                0x08001b84       0x4c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001174       0x54 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x08001bd0       0x64 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .text.NVIC_DecodePriority
-                0x08001c34       0x6c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .text.__NVIC_SystemReset
-                0x08001ca0       0x2c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+                0x080011c8       0x64 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
  .text.SysTick_Config
-                0x08001ccc       0x44 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+                0x0800122c       0x44 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08001d10       0x16 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001d10                HAL_NVIC_SetPriorityGrouping
+                0x08001270       0x16 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001270                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08001d26       0x38 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001d26                HAL_NVIC_SetPriority
- .text.HAL_NVIC_EnableIRQ
-                0x08001d5e       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001d5e                HAL_NVIC_EnableIRQ
- .text.HAL_NVIC_DisableIRQ
-                0x08001d7a       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001d7a                HAL_NVIC_DisableIRQ
- .text.HAL_NVIC_SystemReset
-                0x08001d96        0x8 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001d96                HAL_NVIC_SystemReset
+                0x08001286       0x38 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001286                HAL_NVIC_SetPriority
  .text.HAL_SYSTICK_Config
-                0x08001d9e       0x18 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001d9e                HAL_SYSTICK_Config
- .text.HAL_NVIC_GetPriorityGrouping
-                0x08001db6        0xe CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001db6                HAL_NVIC_GetPriorityGrouping
- .text.HAL_NVIC_GetPriority
-                0x08001dc4       0x2c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001dc4                HAL_NVIC_GetPriority
- .text.HAL_NVIC_SetPendingIRQ
-                0x08001df0       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001df0                HAL_NVIC_SetPendingIRQ
- .text.HAL_NVIC_GetPendingIRQ
-                0x08001e0c       0x1e CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001e0c                HAL_NVIC_GetPendingIRQ
- .text.HAL_NVIC_ClearPendingIRQ
-                0x08001e2a       0x1c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001e2a                HAL_NVIC_ClearPendingIRQ
- .text.HAL_NVIC_GetActive
-                0x08001e46       0x1e CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001e46                HAL_NVIC_GetActive
- .text.HAL_SYSTICK_CLKSourceConfig
-                0x08001e64       0x38 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001e64                HAL_SYSTICK_CLKSourceConfig
- .text.HAL_SYSTICK_IRQHandler
-                0x08001e9c        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001e9c                HAL_SYSTICK_IRQHandler
- .text.HAL_SYSTICK_Callback
-                0x08001ea8        0xc CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001ea8                HAL_SYSTICK_Callback
+                0x080012be       0x18 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+                0x080012be                HAL_SYSTICK_Config
  .text.SystemInit
-                0x08001eb4        0xc CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
-                0x08001eb4                SystemInit
- .text.SystemCoreClockUpdate
-                0x08001ec0       0xe4 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
-                0x08001ec0                SystemCoreClockUpdate
- .text.memset   0x08001fa4       0x10 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
-                0x08001fa4                memset
+                0x080012d6        0xc CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
+                0x080012d6                SystemInit
+ .text.memset   0x080012e2       0x10 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
+                0x080012e2                memset
+ *fill*         0x080012f2        0x2 
  .text.__libc_init_array
-                0x08001fb4       0x48 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
-                0x08001fb4                __libc_init_array
+                0x080012f4       0x48 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
+                0x080012f4                __libc_init_array
  *(.rodata)
  *(.rodata*)
  .rodata.aPLLMULFactorTable.1
-                0x08001ffc       0x10 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+                0x0800133c       0x10 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
  .rodata.aPredivFactorTable.0
-                0x0800200c        0x2 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x0800200e        0x2 
+                0x0800134c        0x2 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x0800134e        0x2 
  .rodata.AHBPrescTable
-                0x08002010       0x10 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
-                0x08002010                AHBPrescTable
- .rodata.APBPrescTable
-                0x08002020        0x8 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
-                0x08002020                APBPrescTable
-                0x08002028                        . = ALIGN (0x4)
-                0x08002028                        _etext = .
-                0x08002028                        _sidata = LOADADDR (.data)
+                0x08001350       0x10 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
+                0x08001350                AHBPrescTable
+                0x08001360                        . = ALIGN (0x4)
+                0x08001360                        _etext = .
+                0x08001360                        _sidata = LOADADDR (.data)
 
-.glue_7         0x08002028        0x0
- .glue_7        0x08002028        0x0 linker stubs
+.glue_7         0x08001360        0x0
+ .glue_7        0x08001360        0x0 linker stubs
 
-.glue_7t        0x08002028        0x0
- .glue_7t       0x08002028        0x0 linker stubs
+.glue_7t        0x08001360        0x0
+ .glue_7t       0x08001360        0x0 linker stubs
 
-.vfp11_veneer   0x08002028        0x0
- .vfp11_veneer  0x08002028        0x0 linker stubs
+.vfp11_veneer   0x08001360        0x0
+ .vfp11_veneer  0x08001360        0x0 linker stubs
 
-.v4_bx          0x08002028        0x0
- .v4_bx         0x08002028        0x0 linker stubs
+.v4_bx          0x08001360        0x0
+ .v4_bx         0x08001360        0x0 linker stubs
 
-.iplt           0x08002028        0x0
- .iplt          0x08002028        0x0 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
+.iplt           0x08001360        0x0
+ .iplt          0x08001360        0x0 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
 
-.rel.dyn        0x08002028        0x0
- .rel.iplt      0x08002028        0x0 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
+.rel.dyn        0x08001360        0x0
+ .rel.iplt      0x08001360        0x0 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
 
-.data           0x20000000        0xc load address 0x08002028
+.data           0x20000000        0xc load address 0x08001360
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
- .data          0x20000000        0x0 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
- .data          0x20000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
- .data          0x20000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
- .data          0x20000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
- .data          0x20000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
- .data          0x20000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .data          0x20000000        0x0 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
- .data          0x20000000        0x0 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
- .data          0x20000000        0x0 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
  *(.data*)
  .data.uwTickPrio
                 0x20000000        0x4 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
@@ -986,22 +946,13 @@ END GROUP
                 0x2000000c                        . = ALIGN (0x4)
                 0x2000000c                        _edata = .
 
-.igot.plt       0x2000000c        0x0 load address 0x08002034
+.igot.plt       0x2000000c        0x0 load address 0x0800136c
  .igot.plt      0x2000000c        0x0 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
 
-.bss            0x2000000c        0x4 load address 0x08002034
+.bss            0x2000000c        0x4 load address 0x0800136c
                 0x2000000c                        . = ALIGN (0x4)
                 0x2000000c                        _sbss = .
  *(.bss)
- .bss           0x2000000c        0x0 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
- .bss           0x2000000c        0x0 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
- .bss           0x2000000c        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
- .bss           0x2000000c        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
- .bss           0x2000000c        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
- .bss           0x2000000c        0x0 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .bss           0x2000000c        0x0 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
- .bss           0x2000000c        0x0 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
- .bss           0x2000000c        0x0 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
  *(.bss*)
  .bss.uwTick    0x2000000c        0x4 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
                 0x2000000c                uwTick
@@ -1010,7 +961,7 @@ END GROUP
                 0x20000010                        _ebss = .
 
 ._user_heap_stack
-                0x20000010      0x200 load address 0x08002034
+                0x20000010      0x200 load address 0x0800136c
                 0x20000010                        . = ALIGN (0x8)
                 0x20000210                        . = (. + 0x200)
  *fill*         0x20000010      0x200 
@@ -1048,37 +999,37 @@ LOAD linker stubs
  .comment       0x00000045       0x46 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
  .comment       0x00000045       0x46 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
 
-.debug_line     0x00000000     0x3e90
+.debug_line     0x00000000     0x3e8a
  .debug_line    0x00000000       0x78 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
- .debug_line    0x00000078      0x8ff CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
- .debug_line    0x00000977      0x9aa CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
- .debug_line    0x00001321      0xa07 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
- .debug_line    0x00001d28      0xe63 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
- .debug_line    0x00002b8b      0xb74 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .debug_line    0x000036ff      0x791 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
+ .debug_line    0x00000078      0x8f9 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
+ .debug_line    0x00000971      0x9aa CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .debug_line    0x0000131b      0xa07 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_line    0x00001d22      0xe63 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_line    0x00002b85      0xb74 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_line    0x000036f9      0x791 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
 
 .debug_line_str
                 0x00000000       0x76
  .debug_line_str
                 0x00000000       0x76 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
 
-.debug_info     0x00000000     0x2785
+.debug_info     0x00000000     0x2799
  .debug_info    0x00000000       0x30 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
- .debug_info    0x00000030      0x614 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
- .debug_info    0x00000644      0x704 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
- .debug_info    0x00000d48      0x5ab CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
- .debug_info    0x000012f3      0x7e9 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
- .debug_info    0x00001adc      0xa87 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .debug_info    0x00002563      0x222 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
+ .debug_info    0x00000030      0x628 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
+ .debug_info    0x00000658      0x704 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .debug_info    0x00000d5c      0x5ab CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_info    0x00001307      0x7e9 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_info    0x00001af0      0xa87 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_info    0x00002577      0x222 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
 
-.debug_abbrev   0x00000000      0xcf6
+.debug_abbrev   0x00000000      0xd09
  .debug_abbrev  0x00000000       0x24 CMakeFiles/HW04_GPIO.dir/startup_stm32f103xb.s.obj
- .debug_abbrev  0x00000024      0x21d CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
- .debug_abbrev  0x00000241      0x201 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
- .debug_abbrev  0x00000442      0x1ca CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
- .debug_abbrev  0x0000060c      0x2b3 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
- .debug_abbrev  0x000008bf      0x2f8 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .debug_abbrev  0x00000bb7      0x13f CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
+ .debug_abbrev  0x00000024      0x230 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
+ .debug_abbrev  0x00000254      0x201 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .debug_abbrev  0x00000455      0x1ca CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_abbrev  0x0000061f      0x2b3 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_abbrev  0x000008d2      0x2f8 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_abbrev  0x00000bca      0x13f CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
 
 .debug_aranges  0x00000000      0x380
  .debug_aranges
@@ -1182,12 +1133,12 @@ LOAD linker stubs
  .debug_macro   0x000180e9      0x2c2 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
  .debug_macro   0x000183ab      0x2c2 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
 
-.debug_frame    0x00000000      0xcbc
- .debug_frame   0x00000000      0x158 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
- .debug_frame   0x00000158      0x334 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
- .debug_frame   0x0000048c      0x14c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
- .debug_frame   0x000005d8      0x218 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
- .debug_frame   0x000007f0      0x428 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
- .debug_frame   0x00000c18       0x58 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
- .debug_frame   0x00000c70       0x20 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
- .debug_frame   0x00000c90       0x2c C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
+.debug_frame    0x00000000      0xcc4
+ .debug_frame   0x00000000      0x160 CMakeFiles/HW04_GPIO.dir/Src/main.c.obj
+ .debug_frame   0x00000160      0x334 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal.c.obj
+ .debug_frame   0x00000494      0x14c CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_frame   0x000005e0      0x218 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_frame   0x000007f8      0x428 CMakeFiles/HW04_GPIO.dir/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_frame   0x00000c20       0x58 CMakeFiles/HW04_GPIO.dir/Src/system_stm32f1xx.c.obj
+ .debug_frame   0x00000c78       0x20 C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-memset.o)
+ .debug_frame   0x00000c98       0x2c C:/PROGRA~2/ARMGNU~1/14EFD8~1.2RE/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp\libc_nano.a(libc_a-init.o)
